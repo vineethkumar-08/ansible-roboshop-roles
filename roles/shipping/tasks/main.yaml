@@ -21,8 +21,7 @@
   loop:
   - cryptography
   - PyMySQL
-    
-
+  
 - name: import shipping data
   community.mysql.mysql_db:
     state: import
