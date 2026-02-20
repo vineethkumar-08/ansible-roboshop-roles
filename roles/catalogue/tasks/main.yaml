@@ -6,7 +6,10 @@
     tasks_from: app_setup.yaml
 
 - name: nodejs_setup
-  ansible.builtin.import_role:
+  tags:
+  - deployment
+  # ansible.builtin.import_role:
+  ansible.builtin.include _role:
     name: common
     tasks_from: nodejs_setup.yaml
      
