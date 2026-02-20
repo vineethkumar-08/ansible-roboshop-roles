@@ -1,5 +1,5 @@
 - name: include vs import
   hosts: local
   connection: local
-  tasks_from:
+  roles:
   - include-import
