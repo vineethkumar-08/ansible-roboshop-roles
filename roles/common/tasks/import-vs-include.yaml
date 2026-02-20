@@ -3,7 +3,7 @@
     msg: "Hi, from Task-1"
 
 - name: task-2
-  ansible.builtin.debug:
+  ansible.builtin.debbug:
     msg: "Hi, from Task-2"
 
 - name: task-3
