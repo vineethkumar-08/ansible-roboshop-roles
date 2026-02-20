@@ -1,2 +1,2 @@
-dependencie:
-- root: common
+dependencies:
+- role: common
