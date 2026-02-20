@@ -16,6 +16,6 @@
 
 
 - name: restart python
-  ansible.builtin.systemd_service:
+  ansible.builtin.service:
     name: payment
     state: restarted
