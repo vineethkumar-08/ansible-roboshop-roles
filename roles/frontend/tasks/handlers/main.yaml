@@ -1,0 +1,11 @@
+- name: resatrt nginx
+  ansible.builtin.service:
+    name: nginx
+    state: restarted
+    enabled: yes
+
+- name: copy nginx.conf
+  ansible.builtin.template:
+    src: nginx.conf
+    dest: /etc/nginx/nginx.conf.j2
+    notify: resatrt nginx
