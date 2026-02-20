@@ -8,6 +8,8 @@
 
     
 - name: install dependencies
+  tags:
+    - deployment
   community.general.npm:
     path: /app
 
