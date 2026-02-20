@@ -39,6 +39,8 @@
   when: catalogue_output.stdout  | int < 0
 
 - name: start catalogue
+  tags:
+    - deployment
   ansible.builtin.service:
     name: catalogue
     state: restarted
