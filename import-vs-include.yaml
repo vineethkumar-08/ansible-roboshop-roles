@@ -1,4 +1,5 @@
 - name: include vs import
   hosts: local
   connection: local
-  tasks_from: import-vs-include-role.yaml
+  tasks_from:
+  - include-import
