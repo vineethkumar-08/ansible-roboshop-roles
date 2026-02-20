@@ -13,7 +13,7 @@ compose:
 
 keyed_groups:
 - prefix: ""
-  key: tag:Name
+  key: tags:Name
 
 
   
